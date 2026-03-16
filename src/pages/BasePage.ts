@@ -11,7 +11,5 @@ export class BasePage {
     await this.page.waitForLoadState('domcontentloaded');
   }
 
-  async expectUrl(urlOrPattern: string | RegExp) {
-    await expect(this.page).toHaveURL(urlOrPattern);
-  }
+
 }

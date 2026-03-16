@@ -11,9 +11,9 @@ export class LoginPage extends BasePage {
   constructor(page: Page) {
     super(page);
     this.signInWithEmail = page.getByRole('link', {name: 'Sign in with email'})
-    this.emailInput    = page.locator('#ap_email');
+    this.emailInput = page.locator('#ap_email');
     this.passwordInput = page.locator('#ap_password');
-    this.signInButton  = page.locator('#signInSubmit');
+    this.signInButton = page.locator('#signInSubmit');
     this.errorMessage = page.locator('#auth-error-message-box');
   }
 

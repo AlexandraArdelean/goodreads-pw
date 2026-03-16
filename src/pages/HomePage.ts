@@ -9,7 +9,7 @@ export class HomePage extends BasePage {
   constructor(page: Page) {
     super(page);
     this.signInButton = page.getByRole('link', { name: 'Sign in' });
-    this.searchBar    = page.getByRole('banner').getByRole('textbox', { name: 'Search books' });
+    this.searchBar = page.getByRole('banner').getByRole('textbox', { name: 'Search books' });
     this.searchButton = page.getByRole('banner').getByRole('button', { name: 'Search' });
   }
   
