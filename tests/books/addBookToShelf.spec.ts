@@ -3,7 +3,7 @@ import { testData } from '../../src/test-data/testData';
 
 test.describe('Search for a book and add it to ~Want to Read~ shelf' , () => {
 
-  test('Search book and click on want to read button', async ({ gotoHomepage, pageManager }) => {
+  test('Search the book, click on want to read button and verify if book is displayed in want to read shelf', async ({ gotoHomepage, pageManager }) => {
     
     await gotoHomepage();
     await pageManager.homePage.searchBook(testData.book.searchQuery);

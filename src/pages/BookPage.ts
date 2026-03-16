@@ -4,7 +4,7 @@ import { BasePage } from './BasePage';
 export class BookPage extends BasePage {
   readonly bookTitle: Locator;
   readonly wantToReadButton: Locator;
-  readonly myBooksNav: Locator
+  readonly myBooksNav: Locator;
 
   readonly writeReviewButton: Locator;
   readonly myReviewCard: Locator;

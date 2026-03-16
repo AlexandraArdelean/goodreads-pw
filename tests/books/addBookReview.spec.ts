@@ -3,7 +3,7 @@ import { testData } from '../../src/test-data/testData';
 
 test.describe(' Search book and add review', () => {
 
-  test('Search for book and post a review', async ({ gotoHomepage, pageManager }) => {
+  test('Search the book, post a review and verify review on book page', async ({ gotoHomepage, pageManager }) => {
     
     await gotoHomepage();
     await pageManager.homePage.searchBook(testData.book.searchQuery);
