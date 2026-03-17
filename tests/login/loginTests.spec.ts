@@ -1,7 +1,7 @@
 import { test, expect } from '../../src/fixtures';
 import { testData } from '../../src/test-data/testData';
 
-test.describe('Successfull login, without storrage session', () => {
+test.describe('Successfull login, without storage session', () => {
   test('Sign in with valid credentials', async ({ pageManager, gotoHomepage }) => {
     await gotoHomepage();
     await pageManager.homePage.clickSignIn();

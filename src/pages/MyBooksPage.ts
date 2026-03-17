@@ -6,7 +6,7 @@ export class MyBooksPage extends BasePage{
     readonly booksList: Locator;
 
     constructor(page: Page){
-        super(page)
+        super(page);
         this.wantToReadShelf = page.locator('a[title*="Want to Read shelf"]');
         this.booksList = page.locator('#books');
     }
