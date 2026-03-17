@@ -22,7 +22,7 @@ export default defineConfig({
     },
     {
       name: 'chromium',
-      testMatch: /^(?!.*loginTests).*\.spec\.ts$/, //ignora fisierul loginTests
+      testIgnore: /tests\/loginTests\.spec\.ts/, //ignora fisierul loginTests
       use: {
         ...devices['Desktop Chrome'],
         storageState: '.auth/user.json',
